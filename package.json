@@ -1,0 +1,26 @@
+{
+  "name": "Wyltl-Language",
+  "displayName": "Wyltl Language",
+  "description": "Syntax Highlighting for the Wyltl Programming Language",
+  "version": "0.0.1",
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "wyltl",
+      "aliases": ["Wyltl", "wyltl"],
+      "extensions": [".wyltl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "wyltl",
+      "scopeName": "source.wyltl",
+      "path": "./syntaxes/wyltl.tmLanguage.json"
+    }]
+  }
+}
